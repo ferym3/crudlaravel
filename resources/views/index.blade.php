@@ -2,5 +2,13 @@
 @extends('layouts.default')
 
 @section('content')
-    <h1>HALLO</h1>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Hallo Teman-teman</h1>
+                </div>
+            </div>    
+        </div>
+    </section>
 @endsection
