@@ -1,1 +1,1 @@
-<h1>CRUD LARAVEL</h1>
+<h1>CRUD dengan LARAVEL</h1>
