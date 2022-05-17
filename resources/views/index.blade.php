@@ -1,1 +1,6 @@
-<h1>CRUD dengan LARAVEL</h1>
+<!-- <h1>CRUD dengan menggunakan LARAVEL</h1> !-->
+@extends('layouts.default')
+
+@section('content')
+    <h1>HALLO</h1>
+@endsection
