@@ -22,3 +22,4 @@ end ---
 */
 
 Route::get('/', [MahasiswaController::class,'index']);
+Route::get('/create', [MahasiswaController::class,'create']);
