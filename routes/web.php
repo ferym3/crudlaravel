@@ -23,3 +23,4 @@ end ---
 
 Route::get('/', [MahasiswaController::class,'index']);
 Route::get('/create', [MahasiswaController::class,'create']);
+Route::post('/store', [MahasiswaController::class,'store']);

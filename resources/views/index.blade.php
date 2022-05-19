@@ -16,7 +16,20 @@
                             <th>Nama</th>
                             <th>Nim</th>
                             <th>Alamat</th>
+                            <th>Action</th>
                         </tr>    
+                        @foreach ($data as $dataMahasiswa)
+                        <tr>
+                            <td>{{ $dataMahasiswa->id }}</td>
+                            <td>{{ $dataMahasiswa->nama }}</td>
+                            <td>{{ $dataMahasiswa->nim }}</td>
+                            <td>{{ $dataMahasiswa->alamat }}</td>
+                            <td>
+                                <a href="#" class="btn btn-warning">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>    
+                        @endforeach
                     </table>
                 </div>
             </div>    

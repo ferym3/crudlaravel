@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\M_Mahasiswa;
 
 class MahasiswaController extends Controller
 {
@@ -14,7 +15,10 @@ class MahasiswaController extends Controller
     public function index()
     {
         //return('index');
-        return view('index');
+        $data = M_Mahasiswa::all();
+        return view('index')->with([
+            'data' => $data
+        ]);
     }
 
     /**
@@ -37,6 +41,9 @@ class MahasiswaController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->except(['_token']);
+        M_Mahasiswa::insert($data);
+        return redirect('/');
     }
 
     /**
